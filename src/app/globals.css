@@ -5,7 +5,9 @@
 html,
 body {
 	color: #fff;
-	height: 100%;
+	height: max-content;
+	width: 100%;
+	overflow-x: hidden;
 	background: rgb(2, 0, 36);
 	background: linear-gradient(
 		35deg,
