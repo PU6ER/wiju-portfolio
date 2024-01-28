@@ -4,9 +4,11 @@ import Navbar from './navbar/Navbar'
 
 export default function LayoutClient({ children }: PropsWithChildren<unknown>) {
 	return (
-		<main className={styles.layout}>
-			<Navbar />
-			{children}
+		<main className={styles.main}>
+			<div className={styles.layout}>
+				<Navbar />
+				{children}
+			</div>
 		</main>
 	)
 }
