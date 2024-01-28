@@ -19,7 +19,7 @@ export default function Hero() {
 					<span className={styles.textDescription}>
 						Welcome to my corner of the web, where creativity meets
 						functionality. I'm a passionate Frontend Developer, dedicated to
-						crafting seamless and visually stunning digital experiences.
+						crafting seamless and visually stunning digital experiences
 					</span>
 				</div>
 				<img className={styles.face} src='face.jpg' alt='face' />
