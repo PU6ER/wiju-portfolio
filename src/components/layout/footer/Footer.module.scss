@@ -1,6 +1,7 @@
 .navbar {
 	// margin-top: 10px;
 	width: 1100px;
+	max-width:100%;
 	// width: 100%;
 	display: flex;
 	text-decoration: none;
@@ -15,15 +16,5 @@
 		width: 400px;
 		justify-content: space-between;
 	}
-	.dropdown {
-		// margin-top: 10px;
-		font-size: 16px;
-		color: #fff;
-		font-family: var(--geist);
-		border: var(--border);
-		background: rgb(30, 84, 249);
-		padding: 10px 15px;
-		border-radius: 10px;
-		// background: var(--background);
-	}
+	
 }

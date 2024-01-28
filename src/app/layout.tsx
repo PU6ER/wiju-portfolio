@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 	title: 'wiju.dev',
 	description: 'Personal portfolio',
 	// icons: 'favicon.ico',
-	icons: { icon: 'favicon.ico' },
+	icons: { icon: 'minilogo.svg' },
 }
 
 export default function RootLayout({
