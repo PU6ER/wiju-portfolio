@@ -1,4 +1,4 @@
-// 'use client'
+'use client'
 
 import {
 	DropdownMenu,
@@ -16,16 +16,26 @@ interface INavbar {}
 
 export default function Navbar({}: INavbar) {
 	return (
-		<nav className={styles.navbar}>
-			<Image alt='logo' src='logo.svg' width={30} height={20} />
-			<div className={styles.links}>
-				<Link href='/blog'>Blog</Link>
-				<Link href='/blog'>Portfolio</Link>
+		<div className=''>
+			<nav className={styles.navbar}>
+				<div className='flex flex-row gap-2'>
+					<Image alt='logo' src='logo.svg' width={30} height={20} />
+					<div className=''>
+						<span className=''>wiju</span>
+						<span className=' text-green-500'>.dev</span>
+					</div>
+				</div>
+				<div className={styles.links}>
+					<Link href='/blog'>Blog</Link>
+					<Link href='/blog'>Portfolio</Link>
+					<Link href='/blog'>Portfolio</Link>
+					<Link href='/blog'>Portfolio</Link>
+				</div>
 				<DropdownMenu>
 					<DropdownMenuTrigger className={styles.dropdown}>
 						Contacts
 					</DropdownMenuTrigger>
-					<DropdownMenuContent>
+					<DropdownMenuContent onCloseAutoFocus={e => e.preventDefault()}>
 						<DropdownMenuLabel>Contacts</DropdownMenuLabel>
 						<DropdownMenuSeparator />
 						<DropdownMenuItem>Telegram</DropdownMenuItem>
@@ -33,7 +43,7 @@ export default function Navbar({}: INavbar) {
 						<DropdownMenuItem>Email</DropdownMenuItem>
 					</DropdownMenuContent>
 				</DropdownMenu>
-			</div>
-		</nav>
+			</nav>
+		</div>
 	)
 }
