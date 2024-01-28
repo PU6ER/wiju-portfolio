@@ -1,0 +1,38 @@
+.hero {
+	width: 1100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 100px;
+}
+.text {
+	text-align: start;
+	font-size: 80px;
+	width: 600px;
+	line-height: 100px;
+	background: #26de6a;
+	background: linear-gradient(to right, #26de6a 14%, #00ff00 50%, #22c55e 84%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-bottom: 10px;
+}
+.textContainer {
+	width: 600px;
+}
+.textTop {
+	text-align: start;
+	font-size: 40px;
+	width: 600px;
+}
+.textDescription {
+	width: 300px;
+	text-align: start;
+}
+.face {
+	width: 300px;
+	height: 300px;
+	border-radius: 200px;
+	border: 10px solid #26de6a;
+   align-self: center;
+}
