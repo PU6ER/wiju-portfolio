@@ -1,0 +1,19 @@
+.navbar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-decoration: none;
+	.links {
+		text-decoration: none;
+
+		// background-color: #fff;
+		color: aquamarine;
+	}
+	.dropdown {
+		font-size: 16px;
+		color: #fff;
+        font-family: var(--geist);
+		border: var(--border);
+		background: var(--background);
+	}
+}
