@@ -5,8 +5,8 @@ import styles from './Footer.module.scss'
 
 export default function Footer() {
 	return (
-		<footer className='h-[300px] w-screen flex flex-col justify-end items-center'>
-			<hr className='h-px w-full border border-blue-600' />
+		<footer className='h-[150px] w-full flex flex-col  items-center overflow-x-hidden'>
+			<hr className='h-px w-full  border-top border-blue-600' />
 			<nav className={styles.navbar}>
 				<div className='flex flex-row gap-2'>
 					<Image alt='logo' src='logo.svg' width={30} height={20} />
@@ -33,7 +33,7 @@ export default function Footer() {
 					</div>
 				</div>
 			</nav>
-			<div className='flex border p-5 rounded-xl'>
+			<div className='flex border p-5 rounded-xl border-blue-600'>
 				<div className='flex'>
 					<Mail color='#1E54F9' className='mr-3' />
 					<span>wijudev@gmail.com</span>
@@ -47,6 +47,9 @@ export default function Footer() {
 					<span>Moscow, Russia</span>
 				</div>
 			</div>
+			<span className=' h-5 text-xs mt-2 text-gray-400'>
+				Copyrigth © 2024 Vladislav Hasanov. All rights reserved.
+			</span>
 		</footer>
 	)
 }
