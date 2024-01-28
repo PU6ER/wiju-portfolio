@@ -16,7 +16,7 @@ interface INavbar {}
 
 export default function Navbar({}: INavbar) {
 	return (
-		<div className=''>
+		<div className='w-screen flex flex-col justify-center items-center'>
 			<nav className={styles.navbar}>
 				<div className='flex flex-row gap-2'>
 					<Image alt='logo' src='logo.svg' width={30} height={20} />
@@ -44,6 +44,7 @@ export default function Navbar({}: INavbar) {
 					</DropdownMenuContent>
 				</DropdownMenu>
 			</nav>
+			<hr className='h-px w-full border border-blue-600' />
 		</div>
 	)
 }
