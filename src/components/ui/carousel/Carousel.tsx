@@ -4,12 +4,23 @@
 //     title: '',
 //     ...NO_INDEX_PAGE
 // }
+'use client'
+import { motion } from 'framer-motion'
 import styles from './Carousel.module.scss'
 
 export default function Carousel() {
 	return (
-		<div className='flex justify-center mt-10 w-full'>
-			<div className='w-[900px] inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]'>
+		<motion.div
+			className='flex justify-center mt-10 w-full'
+			initial={{ opacity: 0, scale: 0.5 }}
+			animate={{ opacity: 1, scale: 1 }}
+			transition={{
+				duration: 0.5,
+				// delay: 0.2,
+				ease: [0, 0.71, 0.2, 1.01],
+			}}
+		>
+			<div className='w-[460px] sm:w-[640px]  md:w-[768px] lg:w-[900px] inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]'>
 				<ul className='flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll'>
 					<li>
 						<img
@@ -104,6 +115,6 @@ export default function Carousel() {
 					</li>
 				</ul>
 			</div>
-		</div>
+		</motion.div>
 	)
 }
