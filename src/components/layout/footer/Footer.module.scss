@@ -1,20 +1,45 @@
 .navbar {
 	// margin-top: 10px;
-	width: 1100px;
-	max-width:100%;
+	width: 100%;
+	max-width: 1100px;
 	// width: 100%;
 	display: flex;
 	text-decoration: none;
 	align-items: center;
 	justify-content: space-between;
-	height: 60px;
+	height: 150px;
 
 	.links {
 		text-decoration: none;
 		display: flex;
+		// flex-direction: column;
 		// gap: 850px;
-		width: 400px;
-		justify-content: space-between;
+		gap: 10%;
+		width: 30%;
+		// justify-content: space-between;
 	}
-	
+}
+
+// #contacts {
+// 	display: flex;
+// }
+@media (max-width: 500px) {
+	.links {
+		flex-direction: column;
+	}
+}
+@media (min-width: 640px) {
+	.links {
+		flex-direction: row;
+	}
+}
+@media (min-width: 768px) {
+	.links {
+		flex-direction: row;
+	}
+}
+@media (min-width: 1024px) {
+	.links {
+		flex-direction: row;
+	}
 }
