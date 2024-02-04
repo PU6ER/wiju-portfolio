@@ -1,5 +1,7 @@
 'use client'
 
+import styles from './NavbarDesktop.module.scss'
+
 import {
 	DropdownMenu,
 	DropdownMenuContent,
@@ -10,13 +12,10 @@ import {
 } from '@/components/ui/dropdown-menu'
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from './Navbar.module.scss'
 
-interface INavbar {}
-
-export default function Navbar({}: INavbar) {
+export default function NavbarDesktop() {
 	return (
-		<header className='w-screen flex flex-col justify-center items-center'>
+		<div className='hidden lg:flex w-screen flex-col justify-center items-center px-3'>
 			<nav className={styles.navbar}>
 				<div className='flex flex-row gap-2'>
 					<Image alt='logo' src='logo.svg' width={30} height={20} />
@@ -44,7 +43,6 @@ export default function Navbar({}: INavbar) {
 					</DropdownMenuContent>
 				</DropdownMenu>
 			</nav>
-			<hr className='h-px w-full border-t border-blue-600' />
-		</header>
+		</div>
 	)
 }

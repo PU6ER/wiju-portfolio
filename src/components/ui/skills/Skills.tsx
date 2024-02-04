@@ -4,7 +4,7 @@ export default function Skills() {
 	return (
 		<section className='flex flex-col w-full justify-center items-center mt-20'>
 			<h2 className=' text-[40px]'>Creative Skills</h2>
-			<span className='w-[750px] text-gray-400'>
+			<span className='w-[90%] text-gray-400 text-center'>
 				As a Frontend Developer, I possess a diverse set of skills and expertise
 				to bring your ideas to life
 			</span>

@@ -17,6 +17,10 @@ body {
 }
 
 @layer base {
+	h1 {
+		@apply text-3xl md:text-4xl xl:text-5xl;
+	}
+	
 	:root {
 		--background: 0 0% 100%;
 		--foreground: 222.2 84% 4.9%;
